@@ -1,0 +1,58 @@
+<!-- 
+    append() do append inside tag targeted
+    prepend() do prepend inside tag targeted
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .happen
+        {
+            background: pink;
+        }
+        #test
+        {
+            background-color: hotpink;
+        }
+        #test1
+        {
+            background-color: green;
+        }
+        .orange
+        {
+            color: orange;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>On Off Method</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde natus iste necessitatibus dolore sunt repellendus officiis! Voluptatum, omnis temporibus.</p>
+    </div>
+    <br>
+    <ol id="ol">
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
+    </ol>
+    <button id="append">Wrap</button>
+    <button id="prepend">Unwrap</button>
+    <button id="append1">WrapAll</button>
+    <button id="prepend2">WrapInner</button>
+    <script src="JS/jquery.js"></script>
+    <script src="js/17_wrap-unwrap.js">
+    </script>
+ </body>
+ </html>
