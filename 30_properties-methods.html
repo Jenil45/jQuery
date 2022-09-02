@@ -1,0 +1,56 @@
+<!-- 
+    jQuery Event object : Properties and Methods
+
+    event.pageX                             mouse cursor cordinate
+    event.pageY                             mouse cursore cordinate
+    event.type                              which event we perform
+    event.which                             which key press
+    event.target                            we perform event on which target shows
+    event.preventDeafault()                 href disabled type
+    event.isDefaultPrevented()              
+    event.stopPropogation()                 alert secure
+    event.isPropogationStopped()
+    event.data
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            padding: 10px;
+
+            min-height: 300px;
+            max-width: 300px;
+            background-color: rgb(127, 212, 212);
+        }
+    </style>
+ </head>
+ <body>
+    <h1>jQuery Event Object : Properties and Method</h1>
+    <div id="result">
+
+    </div>
+    <div id="box">
+        <h1>Test</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, perspiciatis.</p>
+        <button id="test">Test</button>
+    </div>
+    <div id="box2">
+        <a href="www.google.com" id="prevent">Google(Default Prevent)</a>
+        <a href="www.google.com">Google</a>
+    </div>
+    <input type="text" id="inputbox">
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/30_properties-methods.js">
+    </script>
+ </body>
+ </html>
