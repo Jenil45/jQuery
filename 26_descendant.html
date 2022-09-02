@@ -1,0 +1,97 @@
+<!-- 
+    There are many type of method that js can't implement or complex to implement
+    so these are few methods :
+    (1) Ancestor
+    (2) Descendant
+    (3) Sibling
+    (4) Filtering
+ -->
+
+ <!-- 
+    Here we learn ancestor methods:
+        By ancestor method we can target child , grandchild and great-grandchild
+        (1) children()                only its children
+        (2) find(target)              find from anywhere in childrens or lower side   
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-outer
+        {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(235, 182, 235);
+            min-width: 600px;
+            min-height: 600px;
+        }
+
+        #outer
+        {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(242, 233, 156);
+            min-width: 400px;
+            min-height: 400px;
+            
+        }
+
+        #inner
+        {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(166, 220, 156);
+            display: flex;
+            min-width: 200px;
+            min-height: 200px;
+        }
+
+        #inner div
+        {
+            background-color: aqua;
+            min-width: 100px;
+            min-height: 100px;
+            margin: 20px;
+            text-align: center;
+        }
+        .happen
+        {
+            background: pink;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Ancestor Method</h1>
+    <div id="main-outer">
+        <h2>Main Outer</h2>
+        <div id="outer">
+            <h2>Outer</h2>
+            <div id="inner">
+                <h2>Inner</h2>
+                <div>A</div>
+                <div class="test">B</div>
+                <div id="childC">C</div>
+                <div>D</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // $('#inner').children().css('background-color' , 'red')
+            // $('#inner').children('.test').css('background-color' , 'blue')
+            // $('#inner').children('.test').html('<a href="www.google.com">Google</a>')
+            $('#inner').find('#childC').css('background-color' , 'red')
+            $('#inner').find('.test').css('background-color' , 'blue')
+            $('#inner').find('.test').html('<a href="www.google.com">Google</a>')
+        })
+    </script>
+ </body>
+ </html>
