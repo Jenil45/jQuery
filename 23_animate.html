@@ -1,0 +1,44 @@
+<!-- 
+    ${selector}.animate({parameter} , speed , callback)
+    ${selector}.stop(bool : true all animate method stop , bool : true go to end point)
+
+    parameters --#> almost any CSS property(color , background-color)       name should be in camelCase
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: lightgreen;
+            width: 200px;
+            position: relative;
+        }
+        .happen
+        {
+            background: pink;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>On Off Method</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde natus iste necessitatibus dolore sunt repellendus officiis! Voluptatum, omnis temporibus.</p>
+    </div>
+    <br>
+    <button id="animate">Animate</button>
+    <button id="stop">Stop</button>
+
+    <script src="JS/jquery.js"></script>
+    <script src="JS/23_animate.js">
+    </script>
+ </body>
+ </html>
