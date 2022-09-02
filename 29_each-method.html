@@ -1,0 +1,74 @@
+<!-- 
+        each() this traverse for each li in ul    
+-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-outer
+        {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(235, 182, 235);
+            min-width: 600px;
+            min-height: 600px;
+        }
+
+        #outer
+        {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(242, 233, 156);
+            min-width: 400px;
+            min-height: 400px;
+            
+        }
+
+        #inner
+        {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(166, 220, 156);
+            display: flex;
+            min-width: 200px;
+            min-height: 200px;
+        }
+
+        #inner div
+        {
+            background-color: aqua;
+            min-width: 100px;
+            min-height: 100px;
+            margin: 20px;
+            text-align: center;
+        }
+        .happen
+        {
+            background: pink;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Ancestor Method</h1>
+    <ul id="ul">
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
+    </ul>
+
+    <script src="JS/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('li').each(function(){
+                console.log($(this).text());
+            })
+        })
+    </script>
+ </body>
+ </html>
